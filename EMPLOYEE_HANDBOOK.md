@@ -25,7 +25,7 @@ There is a very clear [Definition of Done](https://www.agilealliance.org/glossar
 1. The project must be fully documented. This includes the following:
     1. Complete README that documents the steps to install the code, how to install any dependencies, or system configuration needed.
     2. Every class must be documented with purpose, author, and methods.
-    3. Every method must be documentation with purpose and argument list - which itself must contain a short purpose for each argument.
+    3. Every method must be documented with purpose and argument list - which itself must contain a short purpose for each argument.
 1. The project must be able to run fully, and without errors, on each teammate's system.
 1. Fulfills every requirement.
 1. Every line of code has been peer reviewed.
@@ -55,3 +55,35 @@ You must provide clear steps for any teammate to test the code.
 #### Link to Feature Ticket
 
 At the end of the PR description, you must provide a hyperlink to the ticket that contains a description of the feature you are working on.
+
+## Coding Standards
+
+We will be following the [Python Community's coding guidelines](https://www.python.org/dev/peps/pep-0008/). Here are the big tickets items. Please read the style guide for more information.
+
+1. Variable names are all lower case, with words seperated by underscores
+
+    ```
+    ThisIsBadPractice = False;
+    this_is_good_practice = True;
+    ```
+2. All classes and methods will be documented with docstrings.
+3. Four **spaces** for indentation.
+4. Surround top-level function and class definitions with two blank lines. Method definitions inside a class are surrounded by a single blank line.
+    ```
+    import random
+
+
+    def Bar():
+        """Top level function"""
+
+
+    class Foo:
+        """Sample Foo class that does nothing"""
+
+        def __init__(self):
+            """Constructor function for Foo class"""
+            bar = False
+    ```
+5. Import statements on seperate lines.
+
+
